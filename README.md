@@ -1,1 +1,1 @@
-"# wax-cpu-smartcontract" 
+# wax-cpu-smartcontract
