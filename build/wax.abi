@@ -1,0 +1,350 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "config_table",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "default_quantity",
+                    "type": "uint64"
+                },
+                {
+                    "name": "active_period",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "active2_period",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "cron_table",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "status",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sec",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "delallpackage",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "delpackage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "initpackage",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "modconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "default_quantity",
+                    "type": "uint64"
+                },
+                {
+                    "name": "active_period",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "active2_period",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "modcron",
+            "base": "",
+            "fields": [
+                {
+                    "name": "status",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sec",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "modpackage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "d1",
+                    "type": "uint64"
+                },
+                {
+                    "name": "d3",
+                    "type": "uint64"
+                },
+                {
+                    "name": "d7",
+                    "type": "uint64"
+                },
+                {
+                    "name": "d15",
+                    "type": "uint64"
+                },
+                {
+                    "name": "d30",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "modstaking",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "expire",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "package_table",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "days",
+                    "type": "uint64"
+                },
+                {
+                    "name": "price",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "run",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "setconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "default_quantity",
+                    "type": "uint64"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setpackage",
+            "base": "",
+            "fields": [
+                {
+                    "name": "days",
+                    "type": "uint64"
+                },
+                {
+                    "name": "price",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "stakelog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "stake_to",
+                    "type": "name"
+                },
+                {
+                    "name": "qty",
+                    "type": "asset"
+                },
+                {
+                    "name": "expire",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "staking_table",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "start",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "expire",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "stakedqty",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "unstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "status",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "delallpackage",
+            "type": "delallpackage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "delpackage",
+            "type": "delpackage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "initpackage",
+            "type": "initpackage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "modconfig",
+            "type": "modconfig",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "modcron",
+            "type": "modcron",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "modpackage",
+            "type": "modpackage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "modstaking",
+            "type": "modstaking",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "run",
+            "type": "run",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setconfig",
+            "type": "setconfig",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setpackage",
+            "type": "setpackage",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "stakelog",
+            "type": "stakelog",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unstake",
+            "type": "unstake",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "config",
+            "type": "config_table",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "cron",
+            "type": "cron_table",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "package",
+            "type": "package_table",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stakinglist",
+            "type": "staking_table",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
